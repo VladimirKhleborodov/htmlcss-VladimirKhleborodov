@@ -1,5 +1,5 @@
 .page {
-  background-color: var(--grey-5);
+  background-color: var(--page-bg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

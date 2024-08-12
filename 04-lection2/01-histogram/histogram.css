@@ -3,8 +3,8 @@
   width: 100%;
   padding: 16px 24px 24px;
   
-  background-color: var(--white);
-  border: 1px solid var(--grey-3);
+  background-color: var(--histogram-bg);
+  border: 1px solid var(--histogram-border-color);
   border-radius: 8px;
 }
 
@@ -25,7 +25,7 @@
   line-height: 24px;
   letter-spacing: 0em;
   
-  color: var(--black);
+  color: var(--histogram-title-color);
   opacity: 0.8;
 }
 
@@ -35,15 +35,13 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
-  
-  color: var(--black);
 }
 
 .histogram__link {
   font-family: inherit;
   text-decoration: none;
   
-  color: var(--blue);
+  color: var(--histogram-link-color);
 }
 
 .histogram__data {
@@ -53,6 +51,8 @@
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
+
+  color: var(--histogram-text);
 }
 
 .histogram__chart {
@@ -78,9 +78,9 @@
 }
 
 .histogram__chart-column {
-  width: var(--chart-column-width);
+  width: 9px;
   
-  background-color: var(--blue);
+  background-color: var(--histogram-chart-column-bg);
 }
 
 .histogram__chart-column_max {

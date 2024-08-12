@@ -10,7 +10,8 @@
   
   border-radius: 8px;
   border: none;
-  color: var(--white);
+  color: var(--btn-text-primary);
+  background-color: var(--btn-bg-1);
   
   transition: opacity 200ms ease-in-out,
     background 200ms ease-in-out,
@@ -31,29 +32,28 @@
 }
 
 .button_primary {
-  background-color: var(--blue);
+  background-color: var(--btn-bg-2);
 }
 
 .button_primary:hover {
-  background-color: var(--blue-2);
+  background-color: var(--btn-hover-bg-primary);
 }
 
 .button_secondary {
-  background-color: var(--purple);
+  background-color: var(--btn-bg-3);
 }
 
 .button_secondary:hover {
-  background-color: var(--purple-2);
+  background-color: var(--btn-hover-bg-secondary);
 }
 
 .button_alternate {
-  color: var(--grey-4);
-  border: 1px solid var(--grey-3);
-  background-color: var(--white);
+  color: var(--btn-text-secondary);
+  border: 1px solid var(--btn-border-color);
 }
 
 .button_alternate:hover {
-  border-color: var(--black);
+  border-color: var(--btn-hover-border-color);
 }
 
 .button_preview {

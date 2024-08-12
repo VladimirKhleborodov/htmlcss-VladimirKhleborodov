@@ -7,8 +7,10 @@
   display: flex;
   flex-direction: column;
   
+  text-decoration: none;
+  
   border-radius: 12px;
-  background-color: var(--white);
+  background-color: var(--card-bg);
 }
 
 .card__body {
@@ -58,7 +60,7 @@
   letter-spacing: 0em;
   text-align: center;
   
-  color: var(--black);
+  color: var(--card-title-color);
 }
 
 .card__text {
@@ -66,7 +68,7 @@
   font-size: 16px;
   font-weight: 400;
   
-  color: var(--grey-4);
+  color: var(--card-text);
 }
 
 @media screen and (max-width: 620px) {

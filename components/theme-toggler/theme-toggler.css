@@ -8,14 +8,14 @@
   width: 24px;
   height: 24px;
   
-  color: var(--grey-4);
+  color: var(--sun-color);
 }
 
 .theme-toggler__moon {
   width: 24px;
   height: 24px;
   
-  color: var(--grey-3);
+  color: var(--moon-color);
 }
 
 @media screen and (max-width: 620px) {

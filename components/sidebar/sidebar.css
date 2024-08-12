@@ -19,11 +19,11 @@
   letter-spacing: 0em;
   text-align: left;
   
-  color: var(--black);
+  color: var(--sidebar-title-color-primary);
 }
 
 .sidebar_burger-menu .sidebar__title {
-  color: var(--grey-3);
+  color: var(--sidebar-title-color-secondary);
 }
 
 .sidebar__menu {
@@ -47,7 +47,11 @@
   letter-spacing: 0em;
   text-align: left;
   
-  color: var(--black);
+  color: var(--sidebar-text-color);
+}
+
+.sidebar__item_active {
+  color: var(--sidebar-active-color);
 }
 
 .sidebar__item-link {
@@ -58,7 +62,7 @@
 }
 
 .sidebar__item-link:hover {
-  color: var(--orange);
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 520px) {

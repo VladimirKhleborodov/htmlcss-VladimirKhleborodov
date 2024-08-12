@@ -14,7 +14,7 @@
   text-transform: uppercase;
   user-select: none;
   
-  color: var(--grey-3);
+  color: var(--input-text-primary);
 }
 
 .input__items {
@@ -34,20 +34,21 @@
   text-align: left;
   
   outline: none;
-  border: 1px solid var(--grey-2);
+  border: 1px solid var(--input-border-color);
   border-radius: 8px;
-  color: var(--grey-4);
+  background-color: var(--input-bg);
+  color: var(--input-text-secondary);
   
   transition: border-color 200ms ease-in-out;
 }
 
 .input__textfield::placeholder {
-  color: var(--grey-2);
+  color: var(--input-placeholder-color);
 }
 
 .input__textfield:focus {
-  border-color: var(--blue);
-  box-shadow: 0px 1px 1px 0px #339AF01A;
+  border-color: var(--input-focus-border-color);
+  box-shadow: 0px 1px 1px 0px var(--input-shadow-color);
 }
 
 .input__icon {
@@ -61,11 +62,11 @@
 }
 
 .input__icon_success {
-  color: var(--blue);
+  color: var(--input-success);
 }
 
 .input__icon_error {
-  color: var(--red);
+  color: var(--input-error);
 }
 
 .input_success:has(.input__icon_success) .input__icon_success {
@@ -73,7 +74,7 @@
 }
 
 .input_success:has(.input__icon_success) .input__textfield:focus {
-  border-color: var(--blue);
+  border-color: var(--input-focus-border-color);
 }
 
 .input_success:has(.input__icon_success) .input__textfield:focus ~
@@ -86,11 +87,11 @@
 }
 
 .input_error:has(.input__icon_error) .input__textfield {
-  border-color: var(--red);
+  border-color: var(--input-error-border-color);
 }
 
 .input_error:has(.input__icon_error) .input__textfield:focus {
-  border-color: var(--blue);
+  border-color: var(--input-focus-border-color);
 }
 
 .input_error:has(.input__icon_error) .input__textfield:focus ~
@@ -98,12 +99,12 @@
   display: none;
 }
 
-.input__textfield:disabled ~ .input__items{
-  background-color: var(--grey-2s);
+.input_disabled:has(.input__textfield) .input__textfield {
+  background-color: var(--input-disabled-bg);
 }
 
-.input_preview:has(.input__textfield:disabled) ~ .input__items{
-  background-color: var(--white);
+.input_disabled:has(.input__textfield) .input__textfield::placeholder {
+  color: var(--input-disabled-placeholder-color);
 }
 
 @media screen and (max-width: 768px) {

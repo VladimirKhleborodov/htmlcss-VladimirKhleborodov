@@ -1,0 +1,70 @@
+html[data-theme-dark=""] {
+  --main-bg: var(--grey-4);
+  --secondary-bg: var(--black);
+  --main-font-color: var(--grey-11);
+
+  --header-logo-icon-bg: var(--grey-1);
+  --header-menu-hover-color: var(--grey-2);
+  --header-text-secondary: var(--grey-11);
+
+  --sun-color: var(--grey-3);
+
+  --component-overview-title-color: var(--grey-11);
+
+  --tabs-hover-color: var(--grey-2);
+  --tabs-pseudo-elem-hover-bg: var(--grey-2);
+  --tabs-checked-color: var(--grey-2);
+  --tabs-pseudo-elem-checked-bg: var(--grey-2);
+  --tabs-text-secondary: var(--grey-11);
+  --tabs-template-text: var(--grey-11);
+
+  --card-bg: var(--black);
+  --card-text: var(--grey-11);
+
+  --footer-text-4: var(--grey-11);
+
+  --sidebar-text-color: var(--grey-11);
+  --sidebar-title-color-primary: var(--grey-3);
+  
+  --btn-text-secondary: var(--grey-11);
+
+  --accordion-title-color: var(--grey-11);
+  --accordion-icon-color: var(--grey-11);
+  --accordion-text: var(--grey-11);
+
+  --histogram-bg: var(--black);
+  --histogram-title-color: var(--grey-3);
+  --histogram-text: var(--white);
+
+  --tooltip-icon-color: var(--blue);
+
+  --modal-text-primary: var(--grey-11);
+  --modal-text-secondary: var(--grey-11);
+  
+  --calendar-title-color-primary: var(--grey-11);
+  --calendar-title-color-secondary: var(--grey-3);
+  --calendar-text-primary: var(--grey-11);
+  --calendar-text-theme-change: var(--white);
+
+  --checkbox-text-primary: var(--white);
+  --checkbox-pseudo-elem-bg: var(--white);
+  --checkbox-disabled-border-color: var(--grey-11);
+  --checkbox-disabled-bg: var(--grey-11);
+  --checkbox-disabled-text: var(--grey-11);
+
+  --radio-text: var(--white);
+  --radio-disabled-border-color: var(--grey-11);
+  --radio-disabled-bg: var(--grey-11);
+  --radio-disabled-text: var(--grey-11);
+  
+  --toggler-text: var(--white);
+  --toggler-disabled-text: var(--grey-11);
+
+  --input-text-secondary: var(--grey-11);
+  --input-bg: var(--black);
+
+  --burger-menu-bg-primary: var(--black);
+  --burger-menu-cross-color: var(--grey-4);
+  --burger-menu-logo-color: var(--grey-1);
+  --burger-menu-title-color: var(--grey-3);
+}

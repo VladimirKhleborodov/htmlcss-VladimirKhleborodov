@@ -25,7 +25,7 @@
   height: 28px;
   padding: 1px;
   
-  border: 1px solid var(--grey-2);
+  border: 1px solid var(--toggler-border-color);
   border-radius: 16px;
   
   transition: background 0.5s ease-in-out;
@@ -37,7 +37,7 @@
   height: 24px;
   
   border-radius: 16px;
-  background-color: var(--grey-2);
+  background-color: var(--toggler-bg);
   
   transition:
     background 0.5s ease-in-out,
@@ -52,7 +52,7 @@
   text-align: left;
   user-select: none;
   
-  color: var(--grey-4);
+  color: var(--toggler-text);
 }
 
 .toggler__checkbox:focus ~ .toggler__state
@@ -62,24 +62,30 @@
 
 .toggler__checkbox:checked ~ .toggler__state
 .toggler__control {
-  background-color: var(--blue);
+  background-color: var(--toggler-checked-bg-primary);
+  border-color: var(--toggler-checked-border-color);
 }
 
 .toggler__checkbox:checked ~ .toggler__state
 .toggler__switch {
-  background-color: var(--white);
+  background-color: var(--toggler-checked-bg-secondary);
   
   transform: translateX(100%);
 }
 
 .toggler__checkbox:disabled ~ .toggler__state
+.toggler__label {
+  color: var(--toggler-disabled-text);
+}
+
+.toggler__checkbox:disabled ~ .toggler__state
 .toggler__switch {
-  background-color: var(--grey-3);
+  background-color: var(--toggler-disabled-bg-secondary);
 }
 
 .toggler__checkbox:disabled ~ .toggler__state
 .toggler__control {
-  background-color: var(--grey-2);
+  background-color: var(--toggler-disabled-bg-primary);
 }
 
 @media screen and (max-width: 520px) {

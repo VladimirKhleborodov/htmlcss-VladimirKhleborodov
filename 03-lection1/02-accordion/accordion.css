@@ -3,7 +3,7 @@
   margin-bottom: 8px;
   padding: 24px 32px;
   
-  border: 1px solid var(--grey-3);
+  border: 1px solid var(--accordion-border-color);
   border-radius: 8px;
   overflow: hidden;
   
@@ -35,14 +35,14 @@
   letter-spacing: 0em;
   text-align: left;
   
-  color: var(--black);
+  color: var(--accordion-title-color);
 }
 
 .accordion__icon {
   width: 18px;
   height: 16px;
   
-  color: var(--black);
+  color: var(--accordion-icon-color);
 }
 
 .accordion__content {
@@ -55,7 +55,7 @@
   letter-spacing: 0em;
   text-align: left;
   
-  color: var(--grey-4);
+  color: var(--accordion-text);
 }
 
 .accordion__item[open] {

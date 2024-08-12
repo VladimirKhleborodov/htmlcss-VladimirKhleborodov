@@ -1,5 +1,7 @@
 .preview {
   padding-top: 68px;
+  
+  background-color: var(--preview-bg);
 }
 
 .preview_template {
