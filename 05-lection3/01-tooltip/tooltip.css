@@ -14,7 +14,7 @@
   width: 24px;
   height: 24px;
   
-  color: var(--black);
+  color: var(--tooltip-icon-color);
 }
 
 .tooltip__bubble {
@@ -32,8 +32,8 @@
   text-align: center;
   white-space: nowrap;
   
-  background-color: var(--blue);
-  color: var(--grey-2);
+  background-color: var(--tooltip-bg);
+  color: var(--tooltip-text);
   box-shadow: 0px 2px 4px 0px rgba(33, 36, 41, 0.05);
   border-radius: 10px;
   opacity: 0;
@@ -52,8 +52,8 @@
   left: 50%;
   
   content: "";
-  border: 7px solid transparent;
-  border-top-color: var(--blue);
+  border: 7px solid var(--tooltip-color-primary);
+  border-top-color: var(--tooltip-color-secondary);
   
   transform: translateX(-50%);
 }

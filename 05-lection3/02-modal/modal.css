@@ -7,7 +7,7 @@
   
   display: none;
   
-  background-color: rgba(196, 196, 196, 0.5);
+  background-color: var(--modal-bg-2);
 }
 
 .modal_preview {
@@ -17,7 +17,7 @@
   width: 100%;
   height: auto;
   
-  background-color: transparent;
+  background-color: var(--modal-bg-3);
 }
 
 .modal__window {
@@ -29,7 +29,7 @@
   max-width: 428px;
   padding: 30px 40px 33px;
   
-  background-color: var(--white);
+  background-color: var(--modal-bg-1);
   border-radius: 8px;
   
   transform: translate(-50%, -50%);
@@ -42,7 +42,7 @@
   
   padding: 7%;
   
-  border: 1px solid var(--grey-3);
+  border: 1px solid var(--modal-border-color);
   
   transform: none;
 }
@@ -55,7 +55,7 @@
   width: 16px;
   height: 16px;
   
-  color: var(--grey-4);
+  color: var(--modal-close-icon-color);
 }
 
 .modal__title {
@@ -69,7 +69,7 @@
   letter-spacing: 0px;
   text-align: left;
   
-  color: var(--blue-3);
+  color: var(--modal-text-primary);
 }
 
 .modal__text {
@@ -83,7 +83,7 @@
   letter-spacing: 0em;
   text-align: left;
   
-  color: var(--grey-4);
+  color: var(--modal-text-secondary);
 }
 
 .modal_preview .modal__text {

@@ -23,8 +23,11 @@
 @import "../../07-lection5/03-toggler/toggler.css";
 @import "../../07-lection5/04-input/input.css";
 @import "../../09-lection7/01-burger-menu/burger-menu.css";
+@import "./_theme-changer.css";
 
 :root {
+  --inherit: inherit;
+  --transparent: transparent;
   --white: #ffffff;
   --black: #212429;
   --red: #F03D3E;
@@ -32,12 +35,13 @@
   --pink: #F784AD;
   --liliac: #A0B1F5;
   
-  --purple: #7048E8;
+  --purple-1: #7048E8;
   --purple-2: #5028C6;
   
-  --blue: #4263EB;
+  --blue-1: #4263EB;
   --blue-2: #2342C0;
   --blue-3: #334D6E;
+  --blue-4: #339AF01A;
   
   --grey-1: #F8F9FA;
   --grey-2: #DDE2E5;
@@ -49,14 +53,163 @@
   --grey-8: #E3E7EA;
   --grey-9: #C4C4C4;
   --grey-10: #90A0B7;
+  --grey-11: #ffffff75;
+
+  --gradient-1: linear-gradient(92.51deg, var(--grey-2) 6.44%, var(--grey-6) 38.47%,
+  var(--grey-7) 56.48%, var(--grey-8) 77.5%, var(--grey-2) 102.52%);
+
+  --main-bg: var(--grey-5);
+  --secondary-bg: var(--white);
+  --main-font-color: var(--black);
+
+  --page-bg: var(--main-bg);
   
-  --error: var(--red);
-  --success: var(--blue);
+  --header-bg-primary: var(--main-bg);
+  --header-bg-secondary: var(--secondary-bg);
+  --header-grey-color: var(--grey-4);
+  --header-logo-icon-bg: var(--black);
+  --header-logo-icon-template-bg: var(--black);
+  --header-menu-color: var(--grey-3);
+  --header-menu-hover-color: var(--black);
+  --header-text-primary: var(--main-font-color);
+  --header-text-secondary: var(--grey-4);
+
+  --sun-color: var(--grey-4);
+  --moon-color: var(--grey-3);
+
+  --preview-bg: var(--main-bg);
+
+  --component-overview-bg: var(--secondary-bg);
+  --component-overview-title-color: var(--grey-4);
+
+  --tabs-bg-primary: var(--main-bg);
+  --tabs-bg-secondary: var(--secondary-bg);
+  --tabs-nav-bg: var(--secondary-bg);
+  --tabs-divider-bg: var(--grey-2);
+  --tabs-text-primary: var(--grey-3);
+  --tabs-text-secondary: var(--black);
+  --tabs-template-text: var(--black);
+  --tabs-hover-color: var(--black);
+  --tabs-pseudo-elem-hover-bg: var(--black);
+  --tabs-checked-color: var(--black);
+  --tabs-pseudo-elem-checked-bg: var(--black);
+  --tabs-title-color: var(--grey-3);
+
+  --card-bg: var(--white);
+  --card-title-color: var(--main-font-color);
+  --card-text: var(--grey-4);
+
+  --footer-bg-primary: var(--main-bg);
+  --footer-bg-secondary: var(--secondary-bg);
+  --footer-text-1: var(--main-font-color);
+  --footer-text-2: var(--grey-3);
+  --footer-text-3: var(--main-font-color);
+  --footer-text-4: var(--grey-4);
   
-  --primary: var(--blue);
-  --secondary: var(--purple);
+
+  --sidebar-title-color-primary: var(--black);
+  --sidebar-title-color-secondary: var(--grey-3);
+  --sidebar-text-color: var(--black);
+  --sidebar-active-color: var(--orange);
+
+  --btn-text-primary: var(--white);
+  --btn-text-secondary: var(--grey-4);
+  --btn-bg-1: var(--inherit);
+  --btn-bg-2: var(--blue-1);
+  --btn-bg-3: var(--purple-1);
+  --btn-hover-bg-primary: var(--blue-2);
+  --btn-hover-bg-secondary: var(--purple-2);
+  --btn-border-color: var(--grey-3);
+  --btn-hover-border-color: var(--black);
+
+  --accordion-border-color: var(--grey-3);
+  --accordion-title-color: var(--black);
+  --accordion-icon-color: var(--black);
+  --accordion-text: var(--grey-4);
   
-  --chart-column-width: 9px;
+  --histogram-bg: var(--white);
+  --histogram-border-color: var(--grey-3);
+  --histogram-title-color: var(--black);
+  --histogram-link-color: var(--blue-1);
+  --histogram-text: var(--black);
+  --histogram-chart-column-bg: var(--blue-1);
+
+  --skeleton-border-color: var(--grey-3);
+  --skeleton-bg: var(--gradient-1);
+
+  --tooltip-icon-color: var(--black);
+  --tooltip-bg: var(--blue-1);
+  --tooltip-text: var(--grey-2);
+  --tooltip-color-primary: var(--transparent);
+  --tooltip-color-secondary: var(--blue-1);
+
+  --modal-bg-1: var(--card-bg);
+  --modal-bg-2: var(--grey-9);
+  --modal-bg-3: var(--transparent);
+  --modal-border-color: var(--grey-3);
+  --modal-close-icon-color: var(--grey-4);
+  --modal-text-primary: var(--blue-3);
+  --modal-text-secondary: var(--grey-4);
+  
+  --calendar-bg: var(--card-bg);
+  --calendar-border-color: var(--grey-3);
+  --calendar-title-color-primary: var(--blue-3);
+  --calendar-title-color-secondary: var(--grey-10);
+  --calendar-text-primary: var(--blue-3);
+  --calendar-text-secondary: var(--white);
+  --calendar-text-theme-change: var(--blue-3);
+  --calendar-range-bg-primary: var(--blue-1);
+  --calendar-range-bg-secondary: var(--liliac);
+
+  --checkbox-border-color: var(--grey-2);
+  --checkbox-pseudo-elem-bg: var(--black);
+  --checkbox-icon-color: var(--transparent);
+  --checkbox-text-primary: var(--grey-4);
+  --checkbox-checked-icon-color: var(--white);
+  --checkbox-checked-border-color: var(--blue-1);
+  --checkbox-checked-bg: var(--blue-1);
+  --checkbox-disabled-border-color: var(--grey-2);
+  --checkbox-disabled-icon-color: var(--grey-2);
+  --checkbox-disabled-bg: var(--grey-2);
+  --checkbox-disabled-text: var(--grey-2);
+
+  --radio-border-color: var(--grey-2);
+  --radio-bg: var(--blue-1);
+  --radio-text: var(--grey-4);
+  --radio-checked-border-color: var(--blue-1);
+  --radio-disabled-bg: var(--grey-2);
+  --radio-disabled-text: var(--grey-2);
+  --radio-disabled-border-color: var(--grey-2);
+
+  --toggler-border-color: var(--grey-2);
+  --toggler-bg: var(--grey-2);
+  --toggler-text: var(--grey-4);
+  --toggler-checked-bg-primary: var(--blue-1);
+  --toggler-checked-bg-secondary: var(--white);
+  --toggler-checked-border-color: var(--blue-1);
+  --toggler-disabled-bg-primary: var(--grey-2);
+  --toggler-disabled-bg-secondary: var(--grey-3);
+  --toggler-disabled-text: var(--grey-4);
+
+  --input-text-primary: var(--grey-3);
+  --input-text-secondary: var(--grey-4);
+  --input-placeholder-color: var(--grey-2);
+  --input-bg: var(--white);
+  --input-border-color: var(--grey-2);
+  --input-focus-border-color: var(--blue-1);
+  --input-shadow-color: var(--blue-4);
+  --input-success: var(--blue-1);
+  --input-error: var(--red);
+  --input-error-border-color: var(--red);
+  --input-disabled-bg: var(--grey-2);
+  --input-disabled-placeholder-color: var(--grey-3);
+
+  --burger-menu-bg-primary: var(--grey-5);
+  --burder-menu-bg-secondary: var(--grey-2);
+  --burger-menu-cross-color: var(--black);
+  --burger-menu-logo-color: var(--black);
+  --burger-menu-border-color: var(--grey-2);
+  --burger-menu-title-color: var(--grey-4);
 }
 
 * {
